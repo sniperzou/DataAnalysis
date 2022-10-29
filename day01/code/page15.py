@@ -14,7 +14,8 @@ plt.plot(x,y)
 
 #设置x轴的刻度
 _xtick_labels = [i/2 for i in range(4,49)]
-plt.xticks(range(25,50))
+# plt.xticks(range(25,50))
+plt.xticks(_xtick_labels[::3])
 plt.yticks(range(min(y),max(y)+1))
 
 #保存
